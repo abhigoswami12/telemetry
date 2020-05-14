@@ -1,0 +1,61 @@
+@import "./reset";
+@import "./variables";
+
+
+// general
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.padding{
+    padding: 80px 0;
+}
+.wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.section-wrapper {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.heading {
+    font-size: 2rem;
+    font-weight: $font-weight;
+    color: $text-color-black;
+
+}
+.btn {
+    padding: 12px 28px;
+    color: $text-color-black;
+    text-transform: uppercase;
+    border: none;
+    border: 1px solid $text-color-black;
+    border-radius: 4px;
+    background: transparent;
+}
+
+@import "./header";
+@import "./hero";
+
+@import "./primary";
+
+@import "./data";
+@import "./details";
+@import "./portfolio";
+
+@import "./article";
+@import "./footer";
+

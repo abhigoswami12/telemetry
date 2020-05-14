@@ -1,0 +1,104 @@
+.footer {
+    background: $background;
+}
+.col-mail {
+    width: 60%;
+}
+.col-contact {
+    width: 40%;
+    h3 {
+        padding-bottom: 20px;
+        font-size: 28px;
+        color: $text-color-white;
+    }
+}
+.form {
+   
+    textarea {
+        padding: 10px 8px;
+        display: block;
+        width: 100%;
+        margin-top: 30px;
+        // font-size: 20px;
+        border-radius: 6px;
+        background: transparent;
+        &::placeholder{
+            color: rgb(216, 178, 178);
+            font-size: 20px;
+        }
+        font-weight: 200;
+        border: 0.5px solid rgb(216, 178, 178);
+    }
+    input {
+        display: inline-block;
+        width: 48.7%;
+        padding: 15px 8px;
+        background: transparent;
+        border: 0.5px solid rgb(216, 178, 178);
+        &::placeholder {
+            color: rgb(216, 178, 178);
+            font-size: 18px;
+        }
+        border-radius: 6px;
+    }
+    legend {
+        font-size: 28px;
+        color: $text-color-white;
+        padding-bottom: 20px;
+
+    }
+
+    
+}
+.input-mail {
+    margin-left: 15px;
+}
+// .input-name {
+    //     margin-right: 5px;
+    // }
+    
+.form-button {
+    margin-top: 20px;
+    color: rgb(216, 178, 178);
+    // padding: 12px 20px;
+    border: 0.5px solid rgb(216, 178, 178);
+    
+}
+.flex-footer {
+    display: flex;
+    // flex-direction: row;
+    // align-items: flex-start;
+    // justify-content: flex-start;
+    color: $text-color-white;
+    font-weight:300;
+    // align-items: center;
+    // justify-content: flex-start;;
+}
+.edit-contact-margin {
+    margin-left: 12px;
+    margin-bottom: 40px;
+}
+
+.contact-icons { 
+    i {
+        color: $text-color-white;
+        margin-right: 20px;
+        border: 1px solid white;
+        padding: 12px;
+        border-radius: 4px;
+    }
+}
+
+.footer-last {
+    padding: 40px 0;
+    text-align: $text-align;
+    div {
+        border: 0.3px solid rgb(216, 178, 178);
+    }
+    small {
+        display: inline-block;
+        color: rgb(216, 178, 178);
+        font-size: 13px;
+        padding-top: 60px;
+    }
+}
