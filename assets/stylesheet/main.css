@@ -63,6 +63,7 @@ html {
 body {
   font-family: "Montserrat", sans-serif;
   line-height: 1.5;
+  border-top: 8px solid #E98579;
 }
 
 .container {
@@ -150,6 +151,9 @@ body {
   font-size: 1.4rem;
   font-weight: 300;
 }
+.logo a:hover {
+  color: #E98579;
+}
 .logo span {
   color: #eee7e7;
   padding-left: 0.75rem;
@@ -157,11 +161,15 @@ body {
 }
 
 .nav-menu-item a {
+  padding-bottom: 0.2rem;
   text-decoration: none;
   margin-left: 2rem;
   font-size: 1rem;
   color: #eee7e7;
   font-weight: 300;
+}
+.nav-menu-item a:focus {
+  border-bottom: 1px solid #E98579;
 }
 .nav-menu-item i {
   color: #eee7e7;
@@ -200,6 +208,7 @@ body {
   background: #E98579;
 }
 .sub-menu a {
+  display: block;
   font-size: 1rem;
   display: inline-block;
   margin: 0.5rem 3rem;
@@ -257,10 +266,14 @@ body {
   #toggle:checked ~ .nav-menu {
     display: inline-block;
   }
+
+  .logo {
+    position: relative;
+    z-index: 99;
+  }
 }
 .hero {
   background: url("../media/hero.jpg");
-  background-attachment: fixed;
   text-align: center;
   color: #eee7e7;
   padding: 7.5rem 0;
@@ -452,9 +465,25 @@ body {
   font-size: 1.125rem;
   color: #313030;
   cursor: pointer;
+  outline: 0;
 }
 .links button:hover {
   color: tomato;
+}
+.links button:focus {
+  padding-top: 2rem;
+  border-bottom: 0;
+  background: white;
+}
+
+.consequat {
+  background: #f16a6a;
+  display: none;
+}
+
+.feugiat {
+  display: none;
+  background: #ebc04a;
 }
 
 @media screen and (max-width: 768px) {

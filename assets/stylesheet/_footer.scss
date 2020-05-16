@@ -13,13 +13,11 @@
     }
 }
 .form {
-   
     textarea {
         padding: 10px 8px;
         display: block;
         width: 100%;
         margin-top: 30px;
-        // font-size: 20px;
         border-radius: 6px;
         background: transparent;
         &::placeholder{
@@ -53,26 +51,17 @@
 .input-mail {
     margin-left: 15px;
 }
-// .input-name {
-    //     margin-right: 5px;
-    // }
-    
+
 .form-button {
     margin-top: 1.25rem;
     color: rgb(216, 178, 178);
-    // padding: 12px 20px;
     border: 0.5px solid rgb(216, 178, 178);
     
 }
 .flex-footer {
     display: flex;
-    // flex-direction: row;
-    // align-items: flex-start;
-    // justify-content: flex-start;
     color: $text-color-white;
     font-weight:300;
-    // align-items: center;
-    // justify-content: flex-start;;
 }
 .edit-contact-margin {
     margin-left: 12px;
@@ -116,13 +105,7 @@
     }
     .input-mail {
         margin-left: 0;
-        // display: block;
-        // width: 100%;
     }
-    // .input-name {
-    //     display: block;
-    //     width: 100%;
-    // }
     .form-button {
         width: 100%;
         margin: 0;

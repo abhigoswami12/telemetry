@@ -8,6 +8,7 @@ html {
 body{
     font-family: 'Montserrat', sans-serif;
     line-height: 1.5;
+    border-top: 8px solid $background;
 }
 .container {
     max-width: 1200px;
@@ -18,7 +19,6 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // flex-wrap: wrap;
 }
 .padding{
     padding: 5rem 0;

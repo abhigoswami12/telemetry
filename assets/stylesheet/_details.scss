@@ -27,10 +27,25 @@
         font-size: 1.125rem;
         color: $text-color-black;
         cursor: pointer;
+        outline: 0;
         &:hover {
             color: tomato;
         }
+        &:focus {
+            padding-top: 2rem;
+            border-bottom: 0;
+            background: white;
+        }
     }
+}
+
+.consequat {
+    background: rgb(241, 106, 106);
+    display: none;
+}
+.feugiat {
+    display: none;
+    background: rgb(235, 192, 74);
 }
 
 @media screen and (max-width:768px) {
@@ -38,15 +53,8 @@
         div {
             padding: 0;
         }
-        
     }
     .details-content {
         margin-bottom: 4rem;
-    }
-    .links{
-        // button {
-        //     background: rgb(245, 241, 241);
-        //     padding: 12px 16px;
-        // }
     }
 }

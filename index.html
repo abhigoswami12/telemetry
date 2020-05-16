@@ -22,7 +22,6 @@
                     <label for="toggle" class="bars">
                         <i class="fas fa-bars"></i>
                         <span> Menu</span>
-                       
                     </label>
                     <input type="checkbox" name="" id="toggle">
                     <ul class="nav-menu flex">
@@ -71,13 +70,12 @@
     </header>
     <main>
         <!-- hero -->
-        <section class="hero">
+        <section class="hero" id="parallax">
             <div class="wrapper">
                 <div>
                     <i class="fas fa-laptop"></i>
                 </div>
                 <h1>Lorem ipsum dolor sit<br> consect adipis</h1>
-                <!-- <hr> -->
                 <a href="#"><button>get started</button></a>
             </div>
         </section>
@@ -157,24 +155,46 @@
         <!-- details -->
         <section class=" section-wrapper padding">
             <div class= "links">
-                <button>Aliquam</button><!--
-            --><button>Consequat</button><!--
-                --><button>Feugiat</button>
-                <!-- <a href="">Aliquam</a> -->
-                <!-- <a href="">Consequat</a> -->
-                <!-- <a href="">Feugiat</a> -->
-            </div><!--
-            --><div class=" details flex">
-                <div class="details-content">
-                    <h3>Lorem ipsum dolor sit magna feugiat etiam sed dolor</h3>
-                    <p>Maecenas id feugiat nunc. Integer gravida augue libero, quis pellentesque amet pharetra a. Ut sagittis ipsum nec velit porttitor, sed convallis ligula pellentesque. Mauris et dignissim sem lacinia lorem ipsum dolor.</p>
-                    <button class="btn">Learn more</button>
-                </div>
-                <div>
-                    <img class="image-responsive" src="assets/media/details.jpg" alt="image not found">
+                <button id="aliquam">Aliquam</button><!--
+                --><button id="consequat">Consequat</button><!--
+                --><button id="feugiat">Feugiat</button>
+            </div>
+            <div class="aliquam">
+                <div class=" details flex">
+                    <div class="details-content">
+                        <h3>Lorem ipsum dolor sit magna feugiat etiam sed dolor</h3>
+                        <p>Maecenas id feugiat nunc. Integer gravida augue libero, quis pellentesque amet pharetra a. Ut sagittis ipsum nec velit porttitor, sed convallis ligula pellentesque. Mauris et dignissim sem lacinia lorem ipsum dolor.</p>
+                        <button class="btn">Learn more</button>
+                    </div>
+                    <div>
+                        <img class="image-responsive" src="assets/media/details.jpg" alt="image not found">
+                    </div>
                 </div>
             </div>
-
+            <div class="consequat">
+                <div class=" details flex">
+                    <div class="details-content">
+                        <h3>Lorem ipsum dolor sit magna feugiat etiam sed dolor</h3>
+                        <p>Maecenas id feugiat nunc. Integer gravida augue libero, quis pellentesque amet pharetra a. Ut sagittis ipsum nec velit porttitor, sed convallis ligula pellentesque. Mauris et dignissim sem lacinia lorem ipsum dolor.</p>
+                        <button class="btn">Learn more</button>
+                    </div>
+                    <div>
+                        <img class="image-responsive" src="assets/media/details.jpg" alt="image not found">
+                    </div>
+                </div>
+            </div>
+            <div class="feugiat">
+                <div class=" details flex">
+                    <div class="details-content">
+                        <h3>Lorem ipsum dolor sit magna feugiat etiam sed dolor</h3>
+                        <p>Maecenas id feugiat nunc. Integer gravida augue libero, quis pellentesque amet pharetra a. Ut sagittis ipsum nec velit porttitor, sed convallis ligula pellentesque. Mauris et dignissim sem lacinia lorem ipsum dolor.</p>
+                        <button class="btn">Learn more</button>
+                    </div>
+                    <div>
+                        <img class="image-responsive" src="assets/media/details.jpg" alt="image not found">
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- portfolio -->
@@ -191,7 +211,6 @@
                 <h5>Jane Doe</h5>
                 <p>Ipsum dolor nullam</p>
             </div>
-
         </section>
 
         <!-- article -->
@@ -202,18 +221,6 @@
                 <p>Maecenas id feugiat nunc. Integer gravida augue libero, quis pellentesque amet pharetra a. Ut sagittis ipsum nec velit porttitor, sed convallis ligula pellentesque. Mauris et dignissim sem lacinia lorem ipsum dolor.</p>
                 <button class="btn">learn more</button>
             </div>
-            <!-- <div class="col-article article2">
-                <h4>Ipsum amet</h4>
-                <div></div>
-                <h4>Adipiscing feugiat</h4>
-                <div></div>
-                <h4>Dolor ligula</h4>
-                <div></div>
-                <h4>Libero magna</h4>
-                <div></div>
-                <h4>Nec lacinia</h4>
-                <div></div>
-            </div> -->
             <div class="col-article article2">
                 <h4>Ipsum amet</h4>
                 <progress value="60" max="100"></progress>
@@ -257,7 +264,6 @@
                         <i class="fab fa-instagram"></i>
                         <i class="fab fa-github"></i>
                         <i class="fab fa-linkedin-in"></i>
-
                     </div>
                 </div>
                 <div class="col-mail">
@@ -277,6 +283,43 @@
 
         </section>
     </main>
+
+<!-- details section using javascript -->
+    <script>
+        const parallax = document.getElementById('parallax');
+        window.addEventListener('scroll', ()=> {
+            let offset = window.scrollY;
+            parallax.style.backgroundPositionY = offset * 0.7 + "px";
+        })
+        const aliquam = document.querySelector('.aliquam');
+        const consequat = document.querySelector('.consequat');
+        const feugiat = document.querySelector('.feugiat');
+        const btnAli = document.getElementById('aliquam');
+        const btnCons = document.getElementById('consequat');
+        const btnFeu = document.getElementById('feugiat');
+
+        btnCons.addEventListener('click', displayCons);
+        btnAli.addEventListener('click',displayAli);
+        btnFeu.addEventListener('click',displayFeu);
+
+        function displayCons(event) {
+            consequat.style.display = "block";
+            aliquam.style.display = "none";
+            feugiat.style.display = "none";
+        }
+        function displayAli(event) {
+            console.log(event)
+            consequat.style.display = "none";
+            aliquam.style.display = "block";
+            feugiat.style.display = "none";
+        }
+        function displayFeu(event) {
+            
+            consequat.style.display = "none";
+            aliquam.style.display = "none";
+            feugiat.style.display = "block";
+        }
+    </script>
 
 
     <!-- font awesome link -->
