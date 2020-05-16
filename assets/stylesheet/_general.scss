@@ -1,10 +1,9 @@
-@import "./reset";
-@import "./variables";
-
-
 // general
 *, *::before, *::after {
     box-sizing: border-box;
+}
+html {
+    font-size: 16px;
 }
 body{
     font-family: 'Montserrat', sans-serif;
@@ -19,9 +18,10 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    // flex-wrap: wrap;
 }
 .padding{
-    padding: 80px 0;
+    padding: 5rem 0;
 }
 .wrapper {
     max-width: 600px;
@@ -38,24 +38,36 @@ body{
 
 }
 .btn {
-    padding: 12px 28px;
+    padding: 12px 28px;;
     color: $text-color-black;
     text-transform: uppercase;
     border: none;
     border: 1px solid $text-color-black;
     border-radius: 4px;
     background: transparent;
+    cursor: pointer;
+    &:hover {
+        background: (rgba($color: rgb(226, 106, 36), $alpha: 0.1))
+    }
+}
+.image-responsive {
+    width: 100%;
+    height: auto;
 }
 
-@import "./header";
-@import "./hero";
 
-@import "./primary";
-
-@import "./data";
-@import "./details";
-@import "./portfolio";
-
-@import "./article";
-@import "./footer";
-
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 12px;
+    }
+    .flex {
+        flex-wrap: wrap;
+    }
+    .section-wrapper {
+        padding: 7.5rem 1rem;
+    }
+    .btn {
+        width: 90%;
+        margin: 0 1.5rem;
+    }
+}

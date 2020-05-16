@@ -58,7 +58,7 @@
     // }
     
 .form-button {
-    margin-top: 20px;
+    margin-top: 1.25rem;
     color: rgb(216, 178, 178);
     // padding: 12px 20px;
     border: 0.5px solid rgb(216, 178, 178);
@@ -100,5 +100,33 @@
         color: rgb(216, 178, 178);
         font-size: 13px;
         padding-top: 60px;
+    }
+}
+
+@media screen and (max-width:768px){
+    .col-contact {
+        width: 100%;
+    }
+    .col-mail {
+        width: 100%;
+        margin-top: 5rem;
+    }
+    .flex-footer {
+        flex-wrap: wrap;
+    }
+    .input-mail {
+        margin-left: 0;
+        // display: block;
+        // width: 100%;
+    }
+    // .input-name {
+    //     display: block;
+    //     width: 100%;
+    // }
+    .form-button {
+        width: 100%;
+        margin: 0;
+        margin-top: 2rem;
+        
     }
 }
