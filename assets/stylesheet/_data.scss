@@ -36,6 +36,9 @@
     &:first-child {
       margin-top: 0;
     }
+    &:last-child {
+      border: 0;
+    }
   }
   .data {
     background: $background;
