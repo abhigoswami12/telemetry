@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./assets/stylesheet/main.css">
     <!-- font family -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Open+Sans:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
     <title>Telemtry</title>
 </head>
 <body>
@@ -23,40 +24,47 @@
                         <i class="fas fa-bars"></i>
                         <span> Menu</span>
                     </label>
-                    <input type="checkbox" name="" id="toggle">
+                    <input type="checkbox" name="toggle" id="toggle">
                     <ul class="nav-menu flex">
                         <li class="nav-menu-item">
-                            <a href="#">Home</a>
+                            <a href="#" class="active">Home</a>
                         </li>
-                        <li class="nav-menu-item nav-menu-dropdown-item">
+                        <li class="nav-menu-item nav-menu-item-dropdown">
                             <a href="#"><i class="fas fa-chevron-down"></i>Dropdown</a>
-                            <ul class="sub-menu-box">
-                                <li class="sub-menu">
-                                    <a href="#">option1</a>
-                                </li>
-                                <li class="sub-menu">
-                                    <a href="#">option2</a>
-                                </li>
-                                <li class="sub-menu">
-                                    <a href="#">option3</a>
-                                </li>
-                                <li class="sub-menu">
-                                    <a href="#">Submenu</a>
-                                    <!-- <ul>
-                                        <li>
-                                           <a href="#">option4</a>
+                                <div class="dropdown-sub-menu-box ">
+                                    <div class="caret-up">
+                                        <i class="fas fa-caret-up"></i>
+                                    </div>
+                                    <ul class="dropdown-sub-menu">
+                                        <li class="dropdown-sub-menu-item">
+                                            <a href="#">Option One</a>
                                         </li>
-                                        <li>
-                                            <a href="#">option4</a>
+                                        <li class="dropdown-sub-menu-item">
+                                            <a href="#">Option Two</a>
                                         </li>
-                                        <li>
-                                            <a href="#">option4</a>
+                                        <li class="dropdown-sub-menu-item">
+                                            <a href="#">Option Three</a>
                                         </li>
-                                    </ul> -->
-                                </li>
-                            </ul>
-                            
-                        </li>
+                                        <li class="dropdown-sub-menu-item dropdown-sub-menu-last-item">
+                                            <a href="#">Submenu</a>
+                                            <ul class="submenu-box">
+                                                <li class="submenu-item">
+                                                   <a href="#">Option One</a>
+                                                </li>
+                                                <li class="submenu-item">
+                                                    <a href="#">Option Two</a>
+                                                </li>
+                                                <li class="submenu-item">
+                                                    <a href="#">Option Three</a>
+                                                </li>
+                                                <li class="submenu-item">
+                                                    <a href="#">Option Four</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
                         <li class="nav-menu-item">
                             <a href="#">Generic</a>
                         </li>
@@ -83,47 +91,50 @@
         <!-- primary -->
         <section class="primary padding section-wrapper flex">
             <div class="primary-image outer-col1 ">
-                <img class="image-responsive" src="assets/media/boy-along-river.jpg" alt="image not found">
+                <img class="image-responsive" src="assets/media/boy-along-river.jpg" alt="boy-along-river.jpg">
             </div>
-            <div class="primary-content outer-col2">
-                <h2 class="heading">Lorem ipsum dolor sit amet consectetur adipisicing elite</h2>
+            <div class="outer-col2 flex-outer">
+                <h2 class="heading">Adipiscing ornare risus morbi est est blandi magna vel euismod tempus</h2>
                 <div class="flex">
-                    <div class="col-1-2 ">
-                        <div class="inner-col1 upper-part">
-                            <div class="flex-primary">
-                                <i class="far fa-gem"></i>
-                                <h5>Sed veroeros</h5>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet nulla etiam feugiat sed adipiscing.</p>
+                    <div class="flex-primary col-1-2 upper-part inner-col1">
+                        <div>
+                            <i class="far fa-gem"></i>
                         </div>
-                        <div class="inner-col1">
-                            <div class="flex-primary">
-                                <i class="far fa-clone"></i>
-                                <h5>Nulla consequat</h5>
-                            </div>
+                        <div class="primary-text">
+                            <h5>Sed veroeros</h5>
                             <p>Lorem ipsum dolor sit amet nulla etiam feugiat sed adipiscing.</p>
                         </div>
                     </div>
-                    <div class="col-1-2 ">
-                        <div class="upper-part">
-                            <div class="flex-primary">
-                                <i class="far fa-file"></i>
-                                <h5>Magna etiam</h5>
-                            </div>
+                    <div class="flex-primary col-1-2 upper-part">
+                        <div>
+                            <i class="far fa-file"></i>
+                        </div>
+                        <div class="primary-text">
+                            <h5>Sed veroeros</h5>
                             <p>Lorem ipsum dolor sit amet nulla etiam feugiat sed adipiscing.</p>
                         </div>
+                    </div>
+                    <div class="flex-primary col-1-2 inner-col1">
                         <div>
-                            <div class="flex-primary">
-                                <i class="far fa-envelope"></i>
-                                <h5>Euismod morbi</h5>
-                            </div>
+                            <i class="far fa-clone"></i>
+                        </div>
+                        <div class="primary-text">
+                            <h5>Sed veroeros</h5>
+                            <p>Lorem ipsum dolor sit amet nulla etiam feugiat sed adipiscing.</p>
+                        </div>
+                    </div>
+                    <div class="flex-primary col-1-2">
+                        <div>
+                            <i class="far fa-envelope"></i>
+                        </div>
+                        <div class="primary-text">
+                            <h5>Sed veroeros</h5>
                             <p>Lorem ipsum dolor sit amet nulla etiam feugiat sed adipiscing.</p>
                         </div>
                     </div>
                 </div>
 
             </div>
-
         </section>
 
         <!-- data section -->
@@ -135,18 +146,18 @@
                     <p>Lorem ipsum dolor nulla feugiat adipiscing.</p>
                 </div>
                 <div class="col-1-4">
-                    <h4>128</h4>
-                    <h5>Sed magna</h5>
+                    <h4>640</h4>
+                    <h5>Etiam dolor</h5>
                     <p>Lorem ipsum dolor nulla feugiat adipiscing.</p>
                 </div>
                 <div class="col-1-4">
-                    <h4>128</h4>
-                    <h5>Sed magna</h5>
+                    <h4>256</h4>
+                    <h5>Nullam amet</h5>
                     <p>Lorem ipsum dolor nulla feugiat adipiscing.</p>
                 </div>
                 <div class="col-1-4">
-                    <h4>128</h4>
-                    <h5>Sed magna</h5>
+                    <h4>768</h4>
+                    <h5>Sit euismod</h5>
                     <p>Lorem ipsum dolor nulla feugiat adipiscing.</p>
                 </div>
             </div>
@@ -155,43 +166,43 @@
         <!-- details -->
         <section class=" section-wrapper padding">
             <div class= "links">
-                <button id="aliquam">Aliquam</button><!--
+                <button class="btn-focus" id="aliquam">Aliquam</button><!--
                 --><button id="consequat">Consequat</button><!--
                 --><button id="feugiat">Feugiat</button>
             </div>
             <div class="aliquam">
                 <div class=" details flex">
-                    <div class="col">
+                    <div class="col details-content">
                         <h3>Lorem ipsum dolor sit magna feugiat etiam sed dolor</h3>
                         <p>Maecenas id feugiat nunc. Integer gravida augue libero, quis pellentesque amet pharetra a. Ut sagittis ipsum nec velit porttitor, sed convallis ligula pellentesque. Mauris et dignissim sem lacinia lorem ipsum dolor.</p>
                         <button class="btn">Learn more</button>
                     </div>
                     <div class="col">
-                        <img class="image-responsive" src="assets/media/details.jpg" alt="image not found">
+                        <img class="image-responsive" src="assets/media/details.jpg" alt="boy-with-sunglasses.jpg">
                     </div>
                 </div>
             </div>
             <div class="consequat">
                 <div class=" details flex">
-                    <div class="col">
+                    <div class="col details-content">
                         <h3>Lorem ipsum dolor sit magna feugiat etiam sed dolor</h3>
                         <p>Maecenas id feugiat nunc. Integer gravida augue libero, quis pellentesque amet pharetra a. Ut sagittis ipsum nec velit porttitor, sed convallis ligula pellentesque. Mauris et dignissim sem lacinia lorem ipsum dolor.</p>
                         <button class="btn">Learn more</button>
                     </div>
                     <div class="col">
-                        <img class="image-responsive" src="assets/media/details.jpg" alt="image not found">
+                        <img class="image-responsive" src="assets/media/details.jpg" alt="boy-with-sunglasses.jpg">
                     </div>
                 </div>
             </div>
             <div class="feugiat">
                 <div class=" details flex">
-                    <div class="col">
+                    <div class="col details-content">
                         <h3>Lorem ipsum dolor sit magna feugiat etiam sed dolor</h3>
                         <p>Maecenas id feugiat nunc. Integer gravida augue libero, quis pellentesque amet pharetra a. Ut sagittis ipsum nec velit porttitor, sed convallis ligula pellentesque. Mauris et dignissim sem lacinia lorem ipsum dolor.</p>
                         <button class="btn">Learn more</button>
                     </div>
                     <div class="col">
-                        <img class="image-responsive" src="assets/media/details.jpg" alt="image not found">
+                        <img class="image-responsive" src="assets/media/details.jpg" alt="boy-with-sunglasses.jpg">
                     </div>
                 </div>
             </div>
@@ -217,60 +228,85 @@
         <section class=" section-wrapper flex padding">
             <div class="col-article article1">
                 <h3>Feugiat lorem ipsum dolor velit amet dolor dignissim pharetra</h3>
-                <img class="image-responsive" src="assets/media/article.jpg" alt="image not found">
+                <img class="image-responsive" src="assets/media/article.jpg" alt="mountain-and-road.jpg">
                 <p>Maecenas id feugiat nunc. Integer gravida augue libero, quis pellentesque amet pharetra a. Ut sagittis ipsum nec velit porttitor, sed convallis ligula pellentesque. Mauris et dignissim sem lacinia lorem ipsum dolor.</p>
                 <button class="btn">learn more</button>
             </div>
             <div class="col-article article2">
-                <h4>Ipsum amet</h4>
-                <progress value="60" max="100"></progress>
-                <p>60%</p>
-                <h4>Ipsum amet</h4>
-                <progress value="90" max="100"></progress>
-                <p>90%</p>
-                <h4>Ipsum amet</h4>
-                <progress value="75" max="100"></progress>
-                <p>75%</p>
-                <h4>Ipsum amet</h4>
-                <progress value="45" max="100"></progress>
-                <p>45%</p>
-                <h4>Ipsum amet</h4>
-                <progress value="55" max="100"></progress>
-                <p>55%</p>
-
+                <div>
+                    <h4>Ipsum amet</h4>
+                    <progress value="60" max="100"></progress>
+                    <p>60%</p>
+                </div>
+                <div>
+                    <h4>Ipsum amet</h4>
+                    <progress value="90" max="100"></progress>
+                    <p>90%</p>
+                </div>
+                <div>
+                    <h4>Ipsum amet</h4>
+                    <progress value="75" max="100"></progress>
+                    <p>75%</p>
+                </div>
+                <div>
+                    <h4>Ipsum amet</h4>
+                    <progress value="45" max="100"></progress>
+                    <p>45%</p>
+                </div>
+                <div>
+                    <h4>Ipsum amet</h4>
+                    <progress value="55" max="100"></progress>
+                    <p>55%</p>
+                </div>
             </div>
         </section>
 
         <!-- footer -->
-        <section class="footer">
+        <footer class="footer">
             <div class="padding flex section-wrapper">
                 <div class="col-contact">
                     <h3>Contact</h3>
                     <div class="flex-footer">
                         <i class="fas fa-home"></i>
-                        <address class="edit-contact-margin">1234 Fictional Street #5432<br>Nashville,TN 00000-0000</address>
-                    </div>
-                    <div class="flex-footer">
-                        <i class="fas fa-phone"></i>
-                        <p class="edit-contact-margin">9205578146</p>
+                        <a href="#" class="edit-contact-margin">
+                            <address>1234 Fictional Street #5432<br>Nashville,TN 00000-0000</address>
+                        </a>
                     </div>
                     <div class="flex-footer">
                         <i class="fas fa-envelope"></i>
-                       <p class="edit-contact-margin">golugosu@gmail.com</p>
+                        <a href="" class="edit-contact-margin">(000) 000-0000</a>
                     </div>
-                    <div class="contact-icons">
-                        <i class="fab fa-facebook-f"></i>
-                        <i class="fab fa-twitter"></i>
-                        <i class="fab fa-instagram"></i>
-                        <i class="fab fa-github"></i>
-                        <i class="fab fa-linkedin-in"></i>
+                    <div class="flex-footer">
+                        <i class="fas fa-envelope"></i>
+                       <a href="" class="edit-contact-margin">golugosu@gmail.com</a>
+                    </div>
+                    <div class="  contact-icons">
+                        <ul class="flex-footer">
+                            <li class="social-menu-item">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li class="social-menu-item">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li class="social-menu-item">
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li class="social-menu-item">
+                                <a href="#"><i class="fab fa-github"></i></a>
+                            </li>
+                            <li class="social-menu-item">
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <div class="col-mail">
                     <form class="form">
                         <legend>Email Us</legend>
-                        <input type="text" placeholder="Name" class="input-name"><!--
-                        --><input type="email" placeholder="Email" class="input-mail">
+                        <div class="flex">
+                            <input type="text" name="name" placeholder="Name" class="input-name">
+                            <input type="email" name="email" placeholder="Email" class="input-mail">
+                        </div>
                         <textarea cols="" rows="12" placeholder="Message"></textarea>
                         <button class="btn form-button">Send message</button>
                     </form>
@@ -281,45 +317,10 @@
                 <small>&copy; Untitled. All rights reserved</small>
             </div>
 
-        </section>
+        </footer>
     </main>
 
-<!-- details section using javascript -->
-    <script>
-        const parallax = document.getElementById('parallax');
-        window.addEventListener('scroll', ()=> {
-            let offset = window.scrollY;
-            parallax.style.backgroundPositionY = offset * 0.7 + "px";
-        })
-        const aliquam = document.querySelector('.aliquam');
-        const consequat = document.querySelector('.consequat');
-        const feugiat = document.querySelector('.feugiat');
-        const btnAli = document.getElementById('aliquam');
-        const btnCons = document.getElementById('consequat');
-        const btnFeu = document.getElementById('feugiat');
-
-        btnCons.addEventListener('click', displayCons);
-        btnAli.addEventListener('click',displayAli);
-        btnFeu.addEventListener('click',displayFeu);
-
-        function displayCons(event) {
-            consequat.style.display = "block";
-            aliquam.style.display = "none";
-            feugiat.style.display = "none";
-        }
-        function displayAli(event) {
-            console.log(event)
-            consequat.style.display = "none";
-            aliquam.style.display = "block";
-            feugiat.style.display = "none";
-        }
-        function displayFeu(event) {
-            
-            consequat.style.display = "none";
-            aliquam.style.display = "none";
-            feugiat.style.display = "block";
-        }
-    </script>
+    <script src="assets/javaScript/script.js"></script>
 
 
     <!-- font awesome link -->

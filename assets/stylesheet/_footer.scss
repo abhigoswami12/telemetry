@@ -1,115 +1,151 @@
 .footer {
-    background: $background;
+  background: $background;
 }
 .col-mail {
-    width: 60%;
+  width: 60%;
 }
 .col-contact {
-    width: 40%;
-    h3 {
-        padding-bottom: 20px;
-        font-size: 28px;
-        color: $text-color-white;
-    }
+  width: 40%;
+  h3 {
+    padding-bottom: 1.25rem;
+    font-size: 1.75rem;
+    color: white;
+  }
 }
 .form {
-    textarea {
-        padding: 10px 8px;
-        display: block;
-        width: 100%;
-        margin-top: 30px;
-        border-radius: 6px;
-        background: transparent;
-        &::placeholder{
-            color: rgb(216, 178, 178);
-            font-size: 20px;
-        }
-        font-weight: 200;
-        border: 0.5px solid rgb(216, 178, 178);
+  textarea {
+    color: rgb(247, 241, 241);
+    outline: 0;
+    padding: 0.625rem 1rem;
+    display: block;
+    width: 100%;
+    margin-top: 1.875rem;
+    border-radius: 6px;
+    background: transparent;
+    &::placeholder {
+      color: #f7cec8;
+      font-size: 1rem;
     }
-    input {
-        display: inline-block;
-        width: 48.7%;
-        padding: 15px 8px;
-        background: transparent;
-        border: 0.5px solid rgb(216, 178, 178);
-        &::placeholder {
-            color: rgb(216, 178, 178);
-            font-size: 18px;
-        }
-        border-radius: 6px;
+    font-weight: 200;
+    border: 0.5px solid #f7cec8;
+    &:focus {
+      border: 2px solid $text-color-white;
     }
-    legend {
-        font-size: 28px;
-        color: $text-color-white;
-        padding-bottom: 20px;
-
+  }
+  input {
+    outline: 0;
+    color: rgb(247, 240, 240);
+    display: inline-block;
+    width: 48.7%;
+    padding: 1rem 1rem;
+    background: transparent;
+    border: 0.5px solid #f7cec8;
+    &::placeholder {
+      color: #f7cec8;
+      font-size: 1rem;
     }
-
-    
-}
-.input-mail {
-    margin-left: 15px;
+    border-radius: 6px;
+    &:focus {
+      border: 2px solid $text-color-white;
+    }
+  }
+  legend {
+    font-size: 1.75rem;
+    color: white;
+    padding-bottom: 1.25rem;
+  }
 }
 
 .form-button {
-    margin-top: 1.25rem;
-    color: rgb(216, 178, 178);
-    border: 0.5px solid rgb(216, 178, 178);
-    
+  margin-top: 1.25rem;
+  color: white;
+  border: 0.5px solid rgb(247, 243, 243);
+  &:hover {
+    background: rgba(#ffffff, 0.06);
+  }
 }
 .flex-footer {
-    display: flex;
-    color: $text-color-white;
-    font-weight:300;
+  display: flex;
+  align-items: center;
+  color: $text-color-white;
+  font-weight: 300;
+  margin-bottom: 2rem;
+  &:first-of-type {
+    align-items: flex-start;
+  }
 }
 .edit-contact-margin {
-    margin-left: 12px;
-    margin-bottom: 40px;
+  margin-left: 0.75rem;
+  text-decoration: none;
+  color: rgb(247, 240, 240);
 }
 
-.contact-icons { 
-    i {
-        color: $text-color-white;
-        margin-right: 20px;
-        border: 1px solid white;
-        padding: 12px;
-        border-radius: 4px;
+.social-menu-item {
+  a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    color: $text-color-white;
+    margin-right: 1.25rem;
+    border: 1px solid white;
+    padding: 0.75rem;
+    border-radius: 4px;
+    text-decoration: none;
+    &:hover {
+      background: rgba(#ffffff, 0.08);
     }
+  }
 }
 
 .footer-last {
-    padding: 40px 0;
-    text-align: $text-align;
-    div {
-        border: 0.3px solid rgb(216, 178, 178);
-    }
-    small {
-        display: inline-block;
-        color: rgb(216, 178, 178);
-        font-size: 13px;
-        padding-top: 60px;
-    }
+  padding: 2.5rem 0;
+  text-align: $text-align;
+  div {
+    border: 0.3px solid rgb(216, 178, 178);
+  }
+  small {
+    display: inline-block;
+    color: rgb(216, 178, 178);
+    font-size: 0.82rem;
+    padding-top: 3.75rem;
+  }
 }
 
-@media screen and (max-width:768px){
-    .col-contact {
-        width: 100%;
+//media query
+
+@media screen and (max-width: 768px) {
+  .form {
+    input {
+      width: 100%;
     }
-    .col-mail {
-        width: 100%;
-        margin-top: 5rem;
+  }
+  .col-contact {
+    width: 100%;
+  }
+  .col-mail {
+    width: 100%;
+    margin-top: 5rem;
+  }
+  .flex-footer {
+    flex-wrap: wrap;
+  }
+  .input-mail {
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+
+  .form-button {
+    width: 100%;
+    margin: 0;
+    margin-top: 2rem;
+  }
+  .footer-last {
+    padding: 1rem 0;
+    small {
+      padding-top: 2rem;
     }
-    .flex-footer {
-        flex-wrap: wrap;
-    }
-    .input-mail {
-        margin-left: 0;
-    }
-    .form-button {
-        width: 100%;
-        margin: 0;
-        margin-top: 2rem;
-        
-    }
+  }
 }

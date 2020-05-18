@@ -1,73 +1,76 @@
 // general
-*, *::before, *::after {
-    box-sizing: border-box;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 html {
-    font-size: 16px;
+  font-size: 16px;
 }
-body{
-    font-family: 'Montserrat', sans-serif;
-    line-height: 1.5;
-    border-top: 8px solid $background;
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5;
+  border-top: 8px solid $background;
 }
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
+  max-width: 1340px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
 }
 
 .flex {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
-.padding{
-    padding: 5rem 0;
+.padding {
+  padding: 5rem 0;
 }
 .wrapper {
-    max-width: 600px;
-    margin: 0 auto;
+  max-width: 600px;
+  margin: 0 auto;
 }
 .section-wrapper {
-    max-width: 1140px;
-    margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5rem 2rem;
 }
 .heading {
-    font-size: 2rem;
-    font-weight: $font-weight;
-    color: $text-color-black;
-
+  font-size: 2rem;
+  font-weight: $font-weight;
+  color: $text-color-black;
 }
 .btn {
-    padding: 12px 28px;;
-    color: $text-color-black;
-    text-transform: uppercase;
-    border: none;
-    border: 1px solid $text-color-black;
-    border-radius: 4px;
-    background: transparent;
-    cursor: pointer;
-    &:hover {
-        background: (rgba($color: rgb(226, 106, 36), $alpha: 0.1))
-    }
+  padding: 12px 28px;
+  color: $text-color-black;
+  text-transform: uppercase;
+  border: none;
+  border: 1px solid $text-color-black;
+  border-radius: 4px;
+  background: transparent;
+  cursor: pointer;
+  &:hover {
+    background: (rgba(#f5f1f1, $alpha: 0.5));
+  }
 }
 .image-responsive {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
+//media query
 
 @media screen and (max-width: 768px) {
-    html {
-        font-size: 12px;
-    }
-    .flex {
-        flex-wrap: wrap;
-    }
-    .section-wrapper {
-        padding: 7.5rem 1rem;
-    }
-    .btn {
-        width: 90%;
-        margin: 0 1.5rem;
-    }
+  html {
+    font-size: 12px;
+  }
+  .flex {
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    width: 90%;
+    margin: 0 1.5rem;
+  }
 }

@@ -1,43 +1,46 @@
 .col-1-4 {
-    width: 25%;
-    border-right: 1px solid $text-color-white;
-    h4{
-        font-size: 3rem;
-        font-weight: $font-weight;
-    }
-    
-    p {
-        padding-top: 1.25rem;
-        font-size: 0.875rem;
-        color: rgb(221, 214, 214);
-    }
-    &:last-Child {
-        border-right: 0;
+  width: 25%;
+  border-right: 1px solid $text-color-white;
+  padding: 0 0.75rem;
+  h4 {
+    font-size: 3rem;
+    font-weight: $font-weight;
+  }
 
-    }
+  p {
+    padding-top: 1.25rem;
+    font-size: 0.875rem;
+    color: #f8d7d2;
+  }
+  &:last-child {
+    border-right: 0;
+  }
 }
 
 .data {
-    background: $background;
-    text-align: $text-align;
-    padding: 3.125rem 0.75rem;
-    color: $text-color-white;
+  background: $background;
+  text-align: $text-align;
+  padding: 0 2rem;
+  color: $text-color-white;
 }
 
-
+//media query
 
 @media screen and (max-width: 768px) {
-    .col-1-4 {
-        width: 100%;
-        border: 0;
-        border-bottom: 1px solid $text-color-white;
-        padding-bottom: 3rem;
-        margin-bottom: 3rem;
+  .col-1-4 {
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid $text-color-white;
+    padding-bottom: 3rem;
+    margin-bottom: 3rem;
+    &:first-child {
+      margin-top: 0;
     }
-    .data {
-        background: $background;
-        text-align: $text-align;
-        padding: 3.125rem;
-        color: $text-color-white;
-    }
+  }
+  .data {
+    background: $background;
+    text-align: $text-align;
+    padding: 0;
+    color: $text-color-white;
+  }
 }
