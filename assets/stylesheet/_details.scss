@@ -28,12 +28,10 @@
     border: 1px solid rgb(216, 213, 213);
     font-size: 1.125rem;
     color: $text-color-black;
+    font-weight: 300;
     cursor: pointer;
     outline: 0;
     margin-bottom: -2px;
-    &:hover {
-      color: tomato;
-    }
   }
 }
 .btn-focus {
@@ -41,6 +39,7 @@
   border-bottom: 0 !important;
   background: white !important;
   margin-bottom: -1px !important;
+  color: $background !important;
 }
 
 .consequat {

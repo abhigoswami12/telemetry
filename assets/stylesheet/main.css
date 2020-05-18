@@ -653,12 +653,10 @@ body {
   border: 1px solid #d8d5d5;
   font-size: 1.125rem;
   color: #313030;
+  font-weight: 300;
   cursor: pointer;
   outline: 0;
   margin-bottom: -2px;
-}
-.links button:hover {
-  color: tomato;
 }
 
 .btn-focus {
@@ -666,6 +664,7 @@ body {
   border-bottom: 0 !important;
   background: white !important;
   margin-bottom: -1px !important;
+  color: #e98579 !important;
 }
 
 .consequat {
