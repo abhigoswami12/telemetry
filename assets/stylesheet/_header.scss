@@ -129,10 +129,18 @@
   margin-left: 5.5rem !important;
   font-size: 2.2rem !important;
 }
+.flex-ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
 //media query
 
 @media screen and (max-width: 768px) {
+  .flex-ul {
+    flex-direction: column;
+  }
   .logo {
     a {
       font-size: 1.4rem;
@@ -151,8 +159,10 @@
     bottom: 0;
     background: rgb(26, 25, 25);
     text-align: left;
-    padding: 7rem 0;
+    padding: 7rem 0 !important;
     padding-right: 1rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
     a {
       font-weight: 500;
       display: inline-block;
@@ -177,22 +187,33 @@
   .bars {
     display: inline-block;
     position: relative;
-    z-index: 99;
+    z-index: 0;
     border: 0.5px solid white;
     color: white;
-    border-radius: 6px;
+    border-radius: 4px;
     padding: 0.6rem 1.1rem;
     span {
       color: rfba(#fff, 0.8);
-      margin-left: 0.5rem;
+      margin-left: 0.4rem;
     }
+  }
+  .close-menu {
+    position: absolute;
+    right: 10%;
+    left: 80%;
+    top: 3%;
+    i {
+      font-size: 2rem;
+    }
+    border: 0;
+    color: rgb(216, 203, 203);
   }
   #toggle:checked ~ .nav-menu {
     display: inline-block;
   }
   .logo {
     position: relative;
-    z-index: 99;
+    z-index: 0;
   }
 
   // menu bar
@@ -230,7 +251,7 @@
     }
     &:first-child {
       border-top: 1px solid rgb(58, 48, 48);
-      margin-top: 0.75rem;
+      margin-top: 1.5rem;
     }
   }
 
@@ -268,5 +289,8 @@
     a {
       padding: 0.5rem;
     }
+  }
+  .container {
+    padding: 1.2rem 1.5rem;
   }
 }
