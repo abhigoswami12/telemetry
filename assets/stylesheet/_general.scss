@@ -49,9 +49,10 @@ body {
   border: 1px solid $text-color-black;
   border-radius: 4px;
   background: transparent;
+  outline: 0;
   cursor: pointer;
   &:hover {
-    background: (rgba(#f5f1f1, $alpha: 0.5));
+    background: (rgba(#e9e6e6, $alpha: 0.6));
   }
 }
 .image-responsive {
