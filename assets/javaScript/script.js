@@ -28,7 +28,6 @@ function displayCons(event) {
   btnCons.classList.add("btn-focus");
 }
 function displayAli(event) {
-  console.log(event);
   consequat.style.display = "none";
   aliquam.style.display = "block";
   feugiat.style.display = "none";
@@ -52,7 +51,6 @@ const header = document.querySelector(".header");
 window.addEventListener("scroll", showHeaaderBackground);
 
 function showHeaaderBackground(event) {
-  console.log(event.target, scrollY);
   if (window.scrollY > 530) {
     header.classList.add("header-background");
   } else {
